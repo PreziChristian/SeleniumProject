@@ -1,17 +1,12 @@
 package excercise;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class RegisterPage {
+public class RegisterPage  extends BaseClass{
 
-	WebDriver driver;
-	RegisterPage(WebDriver driver){
-		this.driver=driver;
-	}
-	
+		
 	@Test(priority = 1)
 	public void testClikLogin()  {
 		driver.findElement(By.xpath("//a[text()=' Signup / Login']")).click();

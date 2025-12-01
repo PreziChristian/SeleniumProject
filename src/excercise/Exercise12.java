@@ -16,27 +16,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Exercise12 {
+public class Exercise12 extends BaseClass {
 
-WebDriver driver;
 	
-	@BeforeTest
-	void openAPP() {
-		
-		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get("https://automationexercise.com");
-		driver.manage().window().maximize();
-	}
-	
-	
-	@Test(priority = 1)
-	void testHomePage()  {
-		String currentUrl= driver.getCurrentUrl();
-		String expectUrl="https://automationexercise.com/";
-		Assert.assertEquals(expectUrl, currentUrl);
-		System.out.println("It's Home Page");
-	}
 	
 	@Test(priority=2)
 	void clickProduct() {
@@ -114,13 +96,6 @@ void hoverOnSecond() {
 		
 		
 		}
-	}
-	
-	@AfterTest
-	void closeApp() throws InterruptedException {
-		
-		Thread.sleep(6000);
-		driver.quit();
 	}
 	}
 		

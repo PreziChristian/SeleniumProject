@@ -3,7 +3,7 @@ package excercise;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class Exercise2 extends HomePage{
+public class Exercise2 extends BaseClass{
 
 	@Test(priority = 2)
 	void testClikLogin()  {

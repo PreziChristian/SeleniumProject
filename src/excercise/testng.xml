@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-   	<class name="excercise.HomePage"/>
+   	<class name="excercise.Exercise13"/>
 
   <!--  	 <class name="excercise.Exercise2"/>
       <class name="excercise.Exercise9"/> -->
