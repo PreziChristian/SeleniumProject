@@ -1,11 +1,16 @@
 package excercise;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class RegisterPage  extends BaseClass{
+public class RegisterPage  {
 
+	WebDriver driver;
+	public RegisterPage(WebDriver driver) {
+		this.driver=driver;
+	}
 		
 	@Test(priority = 1)
 	public void testClikLogin()  {

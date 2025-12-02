@@ -37,19 +37,19 @@ public class PlaceOrder {
 	@Test(priority = 12)
 	void reviewProduct() {
 
-//		 wait
-//				.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#cart_info table")));
-//		List<WebElement> rows = driver.findElements(By.cssSelector("#cart_info table tbody tr"));
-//		for (WebElement row : rows) {
-//
-//			String price = row.findElement(By.cssSelector(".cart_price")).getText();
-//			String total = row.findElement(By.cssSelector(".cart_total")).getText();
-//
-//			
-//			System.out.println("Price: " + price);
-//			System.out.println("Total: " + total);
-//
-//		}
+	 wait
+				.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#cart_info table")));
+		List<WebElement> rows = driver.findElements(By.cssSelector("#cart_info table tbody tr"));
+		for (WebElement row : rows) {
+						String price = row.findElement(By.cssSelector(".cart_price")).getText();
+		
+			String total = row.findElement(By.cssSelector(".cart_total")).getText();
+
+			
+			System.out.println("Price: " + price);
+			System.out.println("Total: " + total);
+
+		}
 	}
 
 	@Test(priority = 13)

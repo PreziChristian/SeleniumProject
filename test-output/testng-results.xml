@@ -1,156 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-01T14:38:16 GMT" name="Default suite" finished-at="2025-12-01T14:39:18 GMT" duration-ms="62452">
+  <suite started-at="2025-12-02T14:11:27 GMT" name="Default suite" finished-at="2025-12-02T14:11:53 GMT" duration-ms="25817">
     <groups>
     </groups>
-    <test started-at="2025-12-01T14:38:16 GMT" name="Default test" finished-at="2025-12-01T14:39:18 GMT" duration-ms="62452">
-      <class name="excercise.Exercise20">
-        <test-method is-config="true" signature="openAPP()[pri:0, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:16 GMT" name="openAPP" finished-at="2025-12-01T14:38:29 GMT" duration-ms="13523" status="PASS">
+    <test started-at="2025-12-02T14:11:27 GMT" name="Default test" finished-at="2025-12-02T14:11:53 GMT" duration-ms="25817">
+      <class name="excercise.Exercise26">
+        <test-method is-config="true" signature="openAPP()[pri:0, instance:excercise.Exercise26@682b2fa]" started-at="2025-12-02T14:11:27 GMT" name="openAPP" finished-at="2025-12-02T14:11:46 GMT" duration-ms="18725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAPP -->
-        <test-method signature="clickProduct()[pri:1, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:30 GMT" name="clickProduct" finished-at="2025-12-01T14:38:36 GMT" duration-ms="6056" status="PASS">
+        <test-method signature="scrollPage()[pri:1, instance:excercise.Exercise26@682b2fa]" started-at="2025-12-02T14:11:46 GMT" name="scrollPage" finished-at="2025-12-02T14:11:46 GMT" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickProduct -->
-        <test-method signature="verifyProductPage()[pri:2, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:36 GMT" name="verifyProductPage" finished-at="2025-12-01T14:38:36 GMT" duration-ms="55" status="PASS">
+        </test-method> <!-- scrollPage -->
+        <test-method signature="verifySubsription()[pri:2, instance:excercise.Exercise26@682b2fa]" started-at="2025-12-02T14:11:46 GMT" name="verifySubsription" finished-at="2025-12-02T14:11:46 GMT" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductPage -->
-        <test-method signature="testSearchData()[pri:3, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:36 GMT" name="testSearchData" finished-at="2025-12-01T14:38:42 GMT" duration-ms="6173" status="PASS">
+        </test-method> <!-- verifySubsription -->
+        <test-method signature="scrollUp()[pri:3, instance:excercise.Exercise26@682b2fa]" started-at="2025-12-02T14:11:46 GMT" name="scrollUp" finished-at="2025-12-02T14:11:46 GMT" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchData -->
-        <test-method signature="testSearchedProduct()[pri:4, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:42 GMT" name="testSearchedProduct" finished-at="2025-12-01T14:38:42 GMT" duration-ms="150" status="PASS">
+        </test-method> <!-- scrollUp -->
+        <test-method signature="verifyText()[pri:4, instance:excercise.Exercise26@682b2fa]" started-at="2025-12-02T14:11:46 GMT" name="verifyText" finished-at="2025-12-02T14:11:46 GMT" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchedProduct -->
-        <test-method signature="testAllSearchedProduct()[pri:5, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:42 GMT" name="testAllSearchedProduct" finished-at="2025-12-01T14:38:47 GMT" duration-ms="5266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAllSearchedProduct -->
-        <test-method signature="hoverOnFirst()[pri:6, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:47 GMT" name="hoverOnFirst" finished-at="2025-12-01T14:38:48 GMT" duration-ms="1031" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hoverOnFirst -->
-        <test-method signature="clickContinueShopping()[pri:7, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:48 GMT" name="clickContinueShopping" finished-at="2025-12-01T14:38:50 GMT" duration-ms="1220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickContinueShopping -->
-        <test-method signature="clickOnCart()[pri:8, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:50 GMT" name="clickOnCart" finished-at="2025-12-01T14:38:52 GMT" depends-on-methods="excercise.Exercise20.hoverOnFirst" duration-ms="1990" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnCart -->
-        <test-method signature="verifyCartPage()[pri:9, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:52 GMT" name="verifyCartPage" finished-at="2025-12-01T14:38:52 GMT" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCartPage -->
-        <test-method signature="verifyProductsInCart()[pri:10, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:52 GMT" name="verifyProductsInCart" finished-at="2025-12-01T14:38:57 GMT" duration-ms="5042" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Blue Top is NOT present in cart! expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Blue Top is NOT present in cart! expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at excercise.Exercise20.verifyProductsInCart(Exercise20.java:101)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductsInCart -->
-        <test-method signature="clickOnRegister()[pri:11, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:38:57 GMT" name="clickOnRegister" finished-at="2025-12-01T14:39:00 GMT" duration-ms="2797" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnRegister -->
-        <test-method signature="enterLoginData()[pri:12, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:39:00 GMT" name="enterLoginData" finished-at="2025-12-01T14:39:01 GMT" depends-on-methods="excercise.Exercise20.clickOnRegister" duration-ms="1148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterLoginData -->
-        <test-method signature="testClickLogin()[pri:13, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:39:01 GMT" name="testClickLogin" finished-at="2025-12-01T14:39:01 GMT" duration-ms="323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testClickLogin -->
-        <test-method signature="verifyLoinText()[pri:14, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:39:01 GMT" name="verifyLoinText" finished-at="2025-12-01T14:39:11 GMT" duration-ms="10010" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Blue Top is NOT present in cart! expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Blue Top is NOT present in cart! expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at excercise.Exercise20.verifyProductsInCart(Exercise20.java:101)
-at excercise.Exercise20.verifyLoinText(Exercise20.java:130)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoinText -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:excercise.Exercise20@229f66ed]" started-at="2025-12-01T14:39:11 GMT" name="closeApp" finished-at="2025-12-01T14:39:18 GMT" duration-ms="7345" status="PASS">
+        </test-method> <!-- verifyText -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:excercise.Exercise26@682b2fa]" started-at="2025-12-02T14:11:46 GMT" name="closeApp" finished-at="2025-12-02T14:11:53 GMT" duration-ms="6721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- excercise.Exercise20 -->
+      </class> <!-- excercise.Exercise26 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
