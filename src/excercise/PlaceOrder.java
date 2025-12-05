@@ -10,19 +10,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class PlaceOrder {
-	
+
 	WebDriver driver;
 	WebDriverWait wait;
-	
-	public PlaceOrder(WebDriver driver,WebDriverWait wait) {
-		this.driver=driver;
-		this.wait=wait;
+
+	public PlaceOrder(WebDriver driver, WebDriverWait wait) {
+		this.driver = driver;
+		this.wait = wait;
 	}
-	
+
 	@Test(priority = 11)
 	void reviewDeliveryAddress() {
 		System.out.println("In review");
-		WebElement addressBlock = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@id='address_delivery']")));
+		WebElement addressBlock = wait
+				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@id='address_delivery']")));
 		System.out.print("After address");
 		List<WebElement> addressLines = addressBlock.findElements(By.tagName("li"));
 
@@ -37,15 +38,13 @@ public class PlaceOrder {
 	@Test(priority = 12)
 	void reviewProduct() {
 
-	 wait
-				.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#cart_info table")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#cart_info table")));
 		List<WebElement> rows = driver.findElements(By.cssSelector("#cart_info table tbody tr"));
 		for (WebElement row : rows) {
-						String price = row.findElement(By.cssSelector(".cart_price")).getText();
-		
+			String price = row.findElement(By.cssSelector(".cart_price")).getText();
+
 			String total = row.findElement(By.cssSelector(".cart_total")).getText();
 
-			
 			System.out.println("Price: " + price);
 			System.out.println("Total: " + total);
 

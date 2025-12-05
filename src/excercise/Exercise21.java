@@ -5,7 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Exercise21 extends BaseClass {
-	
 
 	@Test(priority = 1)
 	void clickProduct() {

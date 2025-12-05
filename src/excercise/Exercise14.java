@@ -1,7 +1,6 @@
 package excercise;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -30,7 +29,6 @@ public class Exercise14 extends BaseClass {
 	@Test(priority=2)
 	void hoverOnFirst() {
 	    // Wait until product is visible
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    WebElement product = wait.until(ExpectedConditions.visibilityOfElementLocated(
 	        By.xpath("(//div[@class='productinfo text-center'])[1]")));
 
