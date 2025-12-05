@@ -3,25 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="excercise.Excercise1">
+      <class name="excercise.Exercise26">
         <methods>
-          <include name="clickNewsletter"/>
-          <include name="clickContinue"/>
-          <include name="clickOffer"/>
-          <include name="clickAccountbtn"/>
-          <include name="enterData"/>
-          <include name="clickDelete"/>
-          <include name="verifyText"/>
-          <include name="testcreatedDisplay"/>
-          <include name="enterAddressData"/>
-          <include name="verifyDeleteAcc"/>
-          <include name="verifyLoinText"/>
-          <include name="clickSignupBtn"/>
-          <include name="testSignUpDisplay"/>
-          <include name="fillData"/>
-          <include name="testClikLogin"/>
+          <include name="openAPP"/>
+          <include name="scrollPage"/>
+          <include name="scrollUp"/>
+          <include name="closeApp"/>
         </methods>
-      </class> <!-- excercise.Excercise1 -->
+      </class> <!-- excercise.Exercise26 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

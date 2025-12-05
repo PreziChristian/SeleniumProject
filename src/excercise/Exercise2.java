@@ -3,41 +3,42 @@ package excercise;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class Exercise2 extends HomePage{
+public class Exercise2 extends BaseClass {
 
 	@Test(priority = 2)
-	void testClikLogin()  {
+	void testClikLogin() {
 		driver.findElement(By.xpath("//a[text()=' Signup / Login']")).click();
 	}
-	
-	@Test(priority=3)
+
+	@Test(priority = 3)
 	void verifyLoginPage() {
 		driver.findElement(By.xpath("//h2[text()='Login to your account']")).isDisplayed();
 	}
-	
-	@Test(priority=4)
+
+	@Test(priority = 4)
 	void enterLoginData() {
 		driver.findElement(By.xpath("//input[@data-qa='login-email']")).sendKeys("princy@gmail.com");
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("123456");
 	}
-	@Test(priority=5)
+
+	@Test(priority = 5)
 	void testClickLogin() {
 		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
 	}
-	
-	@Test(priority=6)
+
+	@Test(priority = 6)
 	void verifyLoinText() {
 		driver.findElement(By.xpath("//a[contains(text(), 'Logged in as')]")).isDisplayed();
 	}
-	
-	@Test(priority=7)
+
+	@Test(priority = 7)
 	void clickDelete() {
 		driver.findElement(By.xpath("//a[text()=' Delete Account']")).click();
 	}
-	@Test(priority=8)
+
+	@Test(priority = 8)
 	void verifyDeleteAcc() throws InterruptedException {
 		driver.findElement(By.xpath("//b[text()='Account Deleted!']")).isDisplayed();
 	}
-	
 
 }

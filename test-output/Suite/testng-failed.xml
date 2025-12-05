@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="excercise.HomePage">
+      <class name="excercise.Exercise13">
         <methods>
-          <include name="registerPage"/>
+          <include name="clickViewProduct"/>
           <include name="openAPP"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- excercise.HomePage -->
+      </class> <!-- excercise.Exercise13 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

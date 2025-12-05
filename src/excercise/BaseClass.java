@@ -7,12 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
-public class HomePage {
-
+public class BaseClass {
 	WebDriver driver;
-
 
 	@BeforeClass
 	public void openAPP() {
@@ -29,22 +26,11 @@ public class HomePage {
 
 	
 	}
-	
-	@Test
-	void registerPage() {
-		RegisterPage register=new RegisterPage(driver);
-		register.testClikLogin();
-		register.testSignUpDisplay();
-		register.enterData();
-		register.clickSignupBtn();
-	}
-	
 	@AfterClass
 	public void closeApp() throws InterruptedException {
 		
 		Thread.sleep(6000);
 		driver.quit();
 	}
-	
-	
+
 }

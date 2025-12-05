@@ -2,11 +2,34 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <classes>
-   	<class name="excercise.HomePage"/>
-
-  <!--  	 <class name="excercise.Exercise2"/>
-      <class name="excercise.Exercise9"/> -->
+   <classes>
+   <class name="excercise.Exercise1"/>
+  <class name="excercise.Exercise2"/>
+  <class name="excercise.Exercise3"/>
+  <class name="excercise.Exercise4"/>
+  <class name="excercise.Exercise5"/>
+  <class name="excercise.Exercise6"/>
+  <class name="excercise.Exercise7"/>
+  <class name="excercise.Exercise8"/>
+  <class name="excercise.Exercise9"/>
+  <class name="excercise.Exercise10"/>
+  <class name="excercise.Exercise11"/>
+  <class name="excercise.Exercise12"/>
+  <class name="excercise.Exercise13"/>
+  <class name="excercise.Exercise14"/>
+  <class name="excercise.Exercise15"/>
+  <class name="excercise.Exercise16"/>
+  <class name="excercise.Exercise17"/>
+  <class name="excercise.Exercise18"/>
+  <class name="excercise.Exercise19"/>
+  <class name="excercise.Exercise20"/>
+  <class name="excercise.Exercise21"/>
+  <class name="excercise.Exercise22"/>
+  <class name="excercise.Exercise23"/>
+  <class name="excercise.Exercise24"/>
+  <class name="excercise.Exercise25"/>
+  <class name="excercise.Exercise26" />
+       
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
