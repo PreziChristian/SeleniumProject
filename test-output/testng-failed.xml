@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="excercise.Exercise26">
+      <class name="excercise.Exercise23">
         <methods>
           <include name="openAPP"/>
-          <include name="scrollPage"/>
-          <include name="scrollUp"/>
+          <include name="addToCart"/>
+          <include name="verifyAddress"/>
           <include name="closeApp"/>
+          <include name="verifyBillingAddres"/>
         </methods>
-      </class> <!-- excercise.Exercise26 -->
+      </class> <!-- excercise.Exercise23 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

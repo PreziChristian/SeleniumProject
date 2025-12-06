@@ -3,13 +3,10 @@ package excercise;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class Exercise8 {
-
-	WebDriver driver;
+public class Exercise8 extends BaseClass{
 
 	@Test(priority = 2)
 	void clickProduct() {
@@ -33,7 +30,7 @@ public class Exercise8 {
 
 	@Test(priority = 5)
 	void clickOnFirstProduct() {
-		driver.findElement(By.xpath("//a[@href='/product_details/1']")).click();
+		driver.findElement(By.xpath("(//a[contains(text(),'View Product')])[1]")).click();
 	}
 
 	@Test(priority = 6)

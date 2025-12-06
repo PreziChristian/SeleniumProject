@@ -1,11 +1,9 @@
 package excercise;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class Exercise3 extends BaseClass {
-	WebDriver driver;
 
 	@Test(priority = 2)
 	void testClikLogin() {

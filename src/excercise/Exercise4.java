@@ -1,13 +1,10 @@
 package excercise;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Exercise4 extends BaseClass {
-
-	WebDriver driver;
 
 	@Test(priority = 2)
 	void testClikLogin() {
@@ -21,7 +18,7 @@ public class Exercise4 extends BaseClass {
 
 	@Test(priority = 4)
 	void enterLoginData() {
-		driver.findElement(By.xpath("//input[@data-qa='login-email']")).sendKeys("prezichristian@gmail.com");
+		driver.findElement(By.xpath("//input[@data-qa='login-email']")).sendKeys("princy@gmail.com");
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("123456");
 	}
 

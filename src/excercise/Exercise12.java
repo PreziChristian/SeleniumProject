@@ -73,20 +73,25 @@ public class Exercise12 extends BaseClass {
 	@Test(priority = 7)
 	void verifyAllProduct() {
 
-		List<WebElement> list = driver.findElements(By.xpath("//table[@class='table table-condensed']//tbody//tr"));
+	    List<WebElement> list = driver.findElements(By.xpath("//table[@class='table table-condensed']//tbody//tr"));
 
-		System.out.println(list.size());
+	    System.out.println(list.size());
 
-		for (int i = 0; i < list.size(); i++) {
+	    for (int i = 0; i < list.size(); i++) {
 
-			System.out.println(list.get(i + 1).getText() + list.get(i + 1).isDisplayed());
-			System.out.println("Price : "
-					+ driver.findElement(By.xpath("(//td[@class='cart_price'])[" + (i + 1) + "]")).isDisplayed());
-			System.out.println("Quantity : "
-					+ driver.findElement(By.xpath("(//td[@class='cart_quantity'])[" + (i + 1) + "]")).isDisplayed());
-			System.out.println("Total : "
-					+ driver.findElement(By.xpath("(//td[@class='cart_total'])[" + (i + 1) + "]")).isDisplayed());
+	        // print row text
+	        System.out.println(list.get(i).getText() + " | Displayed: " + list.get(i).isDisplayed());
 
-		}
+	        // column data
+	        System.out.println("Price : " +
+	                driver.findElement(By.xpath("(//td[@class='cart_price'])[" + (i + 1) + "]")).isDisplayed());
+
+	        System.out.println("Quantity : " +
+	                driver.findElement(By.xpath("(//td[@class='cart_quantity'])[" + (i + 1) + "]")).isDisplayed());
+
+	        System.out.println("Total : " +
+	                driver.findElement(By.xpath("(//td[@class='cart_total'])[" + (i + 1) + "]")).isDisplayed());
+	    }
 	}
+
 }

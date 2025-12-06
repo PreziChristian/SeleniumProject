@@ -2,12 +2,9 @@ package excercise;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class Exercise6 extends BaseClass {
-
-	WebDriver driver;
 
 	@Test(priority = 2)
 	void clickContactUs() {
@@ -31,8 +28,11 @@ public class Exercise6 extends BaseClass {
 
 	@Test(priority = 5)
 	void uploadfile() {
+		String projectPath = System.getProperty("user.dir");
+		String filepath=projectPath +"\\txt.txt";
+		System.out.println(filepath);
 		driver.findElement(By.xpath("//input[@name='upload_file']"))
-				.sendKeys("C:\\Users\\Admin\\Downloads\\Challan.pdf");
+				.sendKeys(filepath);
 	}
 
 	@Test(priority = 6)
