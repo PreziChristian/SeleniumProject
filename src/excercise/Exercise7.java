@@ -1,13 +1,11 @@
 package excercise;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Exercise7 extends BaseClass{
 
-	WebDriver driver;
 	
 	@Test(priority=2)
 	void clickTestCase() {

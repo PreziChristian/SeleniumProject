@@ -18,7 +18,7 @@ public class Exercise21 extends BaseClass {
 
 	@Test(priority = 3)
 	void clickOnViewProduct() {
-		driver.findElement(By.cssSelector("a[href='/product_details/1']")).click();
+		driver.findElement(By.xpath("(//a[contains(text(),'View Product')])[1]")).click();
 	}
 
 	@Test(priority = 4)

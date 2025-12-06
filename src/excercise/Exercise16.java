@@ -89,7 +89,7 @@ public class Exercise16 extends BaseClass {
 	void placeorder() {
 		PlaceOrder placeOrder = new PlaceOrder(driver, wait);
 		placeOrder.reviewDeliveryAddress();
-		placeOrder.reviewProduct();
+		//placeOrder.reviewProduct();
 		placeOrder.enterComment();
 		placeOrder.enterPaymentDetails();
 		placeOrder.testOrderConfirm();

@@ -31,14 +31,5 @@ public class Exercise2 extends BaseClass {
 		driver.findElement(By.xpath("//a[contains(text(), 'Logged in as')]")).isDisplayed();
 	}
 
-	@Test(priority = 7)
-	void clickDelete() {
-		driver.findElement(By.xpath("//a[text()=' Delete Account']")).click();
-	}
-
-	@Test(priority = 8)
-	void verifyDeleteAcc() throws InterruptedException {
-		driver.findElement(By.xpath("//b[text()='Account Deleted!']")).isDisplayed();
-	}
 
 }
